@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+#logoimage{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 10vw;
+    height:auto;
+    cursor: pointer;
+    height:auto
+}
+.button-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: transparent; /* 투명 배경 */
+    z-index: 1000; /* 다른 요소 위에 위치 */
+}
+
+.image-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.image-button img {
+    width: 4vw; /* 이미지의 크기 조정 */
+    height: auto;
+    border-radius: 5px;
+}
+
+#loginchart {
+    background-color: white;
+    border-radius: 12px;
+    width: 240px;
+    padding: 24px;
+    text-align: center;
+}
+
+#loginchart span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.33);
+}
+
+#loginchart #id-input,
+#loginchart #password-input {
+    width: 100%;
+    margin-top: 8px;
+    line-height: 36px;
+    font-size: 1.1em;
+    letter-spacing: 3px;
+    border: 1;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#loginchart #id:focus,
+#loginchart #password-input:focus {
+    outline-width: 0;
+}
+
+#signup-button {
+    background-color: #07BA4E; 
+    color: #fff; /* 흰색 텍스트 */
+    margin-top: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#signup-button:hover {
+    background-color: #45a049; /* 마우스 호버 시 색상 변경 */
+}
