@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글 목록</title>
+    <link rel="stylesheet" href="../css/CommunityInside.css">
+    <script src="../javascript/CommunityInside.js" defer></script>
+</head>
+<body>
+    <div class="table-header">
+        <div class="header-item">글쓴이</div>
+        <div class="header-item">제목</div>
+        <div class="header-item">날짜</div>
+        <div class="header-item">조회수</div>
+        <div class="header-item">좋아요</div>
+    </div>
+
+    <ul class="post-list">
+        <li onmouseover="rowMouseOver(this)" onmouseout="rowMouseOut(this)">
+            <div class="post-item">글쓴이 1</div>
+            <div class="post-title" onmouseover="titleMouseOver(this)" onmouseout="titleMouseOut(this)">글 제목 1</div>
+            <div class="post-item">날짜 1</div>
+            <div class="post-item">조회수 1</div>
+            <div class="post-item">좋아요 1</div>
+        </li>
+        <li onmouseover="rowMouseOver(this)" onmouseout="rowMouseOut(this)">
+            <div class="post-item">글쓴이 2</div>
+            <div class="post-title" onmouseover="titleMouseOver(this)" onmouseout="titleMouseOut(this)">글 제목 2</div>
+            <div class="post-item">날짜 2</div>
+            <div class="post-item">조회수 2</div>
+            <div class="post-item">좋아요 2</div>
+        </li>
+        <li onmouseover="rowMouseOver(this)" onmouseout="rowMouseOut(this)">
+            <div class="post-item">글쓴이 3</div>
+            <div class="post-title" onmouseover="titleMouseOver(this)" onmouseout="titleMouseOut(this)">글 제목 3</div>
+            <div class="post-item">날짜 3</div>
+            <div class="post-item">조회수 3</div>
+            <div class="post-item">좋아요 3</div>
+        </li>
+    </ul>
+
+    <div class="pagination">
+        <span class="page-link">&laquo; </span>
+        <span class="page-number">1</span>
+        <span class="page-number">2</span>
+        <span class="page-number">3</span>
+        <span class="page-link"> &raquo;</span>
+    </div>
+
+</body>
+</html>

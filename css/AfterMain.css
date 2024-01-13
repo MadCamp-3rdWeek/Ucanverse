@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card-info {
+    display: flex;
+    align-items: center;/* Add padding as needed */
+}
+
+.grid-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    width: calc(25% - 40px);
+}
+.card img {
+    border-radius: 8px;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -70%); 
+    color: white;
+    display: none;
+}
+
+.star-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.star-btn img {
+    width: 20px; 
+    height: 20px;
+    fill: #AEAEAE;
+}
+
+.card {
+    position: relative;
+}
+
+.overlay_option {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay_option .option_text {
+    color: white;
+    font-size: 24px;
+    width: 100px;
+}
+
+.overlay_option .option_icon {
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+
+summary {
+    cursor: pointer;
+}
