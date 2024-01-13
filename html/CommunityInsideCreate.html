@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card and Input</title>
+    <link rel="stylesheet" href="../css/CommunityInsideCreate.css">
+    <script src="../javascript/CommunityInsideCreate.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <button class="plus_image" onclick="openFileExplorer()">
+                <img src="../images/plus.png" class = "option_icon">
+                <input type="file" id="fileInput" style="display:none;">
+            </button>
+            <p>사진을 추가하세요</p>
+        </div>
+
+        <div class="input-container">
+            <form>
+                <label for="username">제목:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">설명:</label>
+                <input type="text" id="description" required>
+                <label for="password">링크:</label>
+                <input type="text" id="link">
+                <label for="password">태그:</label>
+                <input type="text" id="tag" required>
+                <div class="buttons">
+                    <button class="save" onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)">Save</button>
+                    <button class="post" onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)">Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
