@@ -1,0 +1,202 @@
+@import url("colors.css");
+
+body {
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex; /* flex랑 세트 */
+  flex-direction: row;
+  width: 1000px;
+  height: 100%;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 500px;
+  height: auto;
+  /* border: 1px solid red; */
+  /* flex-direction: row;  <-- 이 부분을 주석 처리 또는 제거하세요. */
+  border: 1px color whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 섀도우 추가 */
+  border-radius: 2%;
+}
+
+#image {
+  height: auto;
+  width: 500px;
+  border-radius: 2%;
+}
+
+.extra-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;  정렬 */
+  /* align-items: flex-start;  정렬 */
+  /* align-items: center; */
+  width: 500px;
+  height: 100%;
+  /* border: 1px solid green; */
+  /* flex-direction: row;  <-- 이 부분을 주석 처리 또는 제거하세요. */
+  border: 1px color whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 섀도우 추가 */
+  border-radius: 2%;
+}
+
+#likeBtn {
+  cursor: pointer;
+  position: relative;
+  margin-top: 5%;
+  margin-left: 80%;
+  width: 50px;
+  height: 30px;
+  border-radius: 40%;
+  border: 0px;
+  background-color: var(--green);
+}
+#likeBtn:hover {
+  filter: brightness(0.7);
+}
+
+#likeText {
+  color: white;
+  font-weight: bold;
+}
+
+.title {
+  /* background-color: aqua; */
+  /* margin-top: 3%; */
+  margin-left: 7%;
+  /* justify-content: flex-start; */
+  /* align-items: flex-start; */
+}
+
+.text {
+  /* background-color: red; */
+  margin-left: 7%;
+  overflow-y: auto;
+  /* justify-content: flex-start; */
+  /* align-items: flex-start; */
+}
+
+#followBtn {
+  cursor: pointer;
+  background-color: var(--green);
+  width: 50px;
+  height: 30px;
+  border-radius: 40%;
+  border: 0px;
+  align-self: center;
+  margin-right: 3%;
+}
+#followBtn:hover {
+  filter: brightness(0.7);
+}
+
+#followText {
+  color: white;
+  font-weight: bold;
+}
+
+#userName {
+  font-weight: bold;
+}
+#num_followers {
+  font-size: 15px;
+}
+
+.user_follow {
+  margin-top: 5%;
+  margin-left: 7%;
+  display: flex;
+  width: 425px;
+  justify-content: space-between;
+  /* background-color: aqua; */
+}
+.extra-top {
+  display: flex;
+  flex-direction: column;
+  /* background-color: aqua; */
+  height: 50%;
+}
+
+.extra-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  height: 50%;
+}
+.comment {
+  margin-left: 7%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: auto;
+  border-radius: 3%;
+  width: 450px;
+  height: 80%;
+  /* background-color: red; */
+}
+.tag {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+.commentItem {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1%;
+}
+.commentUser {
+  font-weight: bold;
+}
+.commentContent {
+  margin-left: 7%;
+}
+
+.typeComment {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 20%;
+  border-top: 1px solid gray;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 섀도우 추가 */
+  border-radius: 2%;
+}
+
+#userName2 {
+  margin-left: 5%;
+}
+
+input {
+  margin-left: 10%;
+  height: 60px;
+  width: 360px;
+  border: 0.1px solid whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  #likeBtn {
+    position: relative;
+    margin-left: 85%;
+    margin-top: 5%;
+  }
+}
